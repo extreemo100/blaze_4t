@@ -116,12 +116,10 @@
           const light = new THREE.HemisphereLight( 0xffffff, 0xbbbbff, 1 );
           scene.add(light);
 
-          
-          //Add Point Light 1
-          const pointLight1 = new THREE.PointLight(0xffffff, 35, 0);
+          const pointLight1 = new THREE.PointLight(0xffffff, 5, 0);
           pointLight1.position.set(0, 0, 0.914);
           scene.add(pointLight1);
-
+          
           const gltf = await loadGLTF('blazee.glb');
           gltf.scene.scale.set(0.1,0.1,0.1);
           gltf.scene.position.set(0, -0.4, 0);
